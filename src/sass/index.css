@@ -139,6 +139,7 @@ h2 {
 .line {
   color: #907E82;
   width: 1167px;
+  height: 1px;
   display: flex;
   align-items: center;
 }

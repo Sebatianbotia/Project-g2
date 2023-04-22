@@ -2,6 +2,8 @@
 /* diseño móvil */
     .footer {
         background-color: $lightpink_color;
+        display: flex;
+        flex-direction: column;
     }
     
     /* footer-titles */

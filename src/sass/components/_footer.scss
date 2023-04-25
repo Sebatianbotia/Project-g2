@@ -203,7 +203,18 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /*footer-titles*/
+    .footer-titles{
+        width: 474px;
+        height:116px;
+    }
+}
 
 
 @media only screen and (min-width: 769px){}

@@ -9,12 +9,16 @@
     margin-left: 10px;
     cursor: pointer;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
         background: $btnf2-hover;
         color: $violet_color;
         transform: scale(1.1);
     }
 }
+
+
+
 
 @media only screen and (max-width: 480px){
     .footer {
@@ -30,6 +34,7 @@
     .footer-titles{
         width: 234px;
         height: 134px;
+        margin-left: 20px;
         font-family: 'Titan One';
     }
     .footer--title1 {
@@ -44,22 +49,15 @@
     }
     
     /*footer-icons*/
-
-    .footer-icons{
-        width: 153px;
-        height: 34px;
-        display: flex;
-        justify-content: flex-end;
-    }
     .footer-icons__list{
         display: flex;
         justify-content: space-between;
-        .footer-icons__container{
-            width: 32px;
-            height: 40px;
-        }
+        align-items: center;
+        width: 300px;
+        height: 34px;
+        padding-left: 120px;
+        margin-left: 148px;
     }
-
     .footer-icons__item{
         display: flex;
         border-radius: 50%;
@@ -81,12 +79,10 @@
         display: flex;
         justify-content: space-between;
         font-style: Bold;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        padding: 0;
-        margin-left: 70px;
-        width: 230px;
+        margin: 40px 0px 20px 70px;
+        width: 380px;
         height: 22px;
+        padding-left: 150px;
     }
     .footer-contact__item{
         color: $black_color;
@@ -127,3 +123,17 @@
         align-items: center;
     }
 }
+
+/*Animaciones*/
+
+/*footer-titles*/
+.footer--title1,
+.footer--title2 {
+    transition: transform 0.5s ease;
+}
+.footer--title1:hover,
+.footer--title2:hover {
+    transform: translateX(20px);
+}
+
+/*footer-icons*/

@@ -67,10 +67,10 @@
         width: 32px;
         height: 32px;
     }
-    .footer-icons__item svg{
+    .footer-icons__item use{
         fill: $pink_color;
     }
-    .footer-icons__item svg:hover {
+    .footer-icons__item:hover use {
         fill: $violet_color;
     }
 

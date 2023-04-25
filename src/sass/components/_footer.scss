@@ -17,7 +17,6 @@
     }
 }
 
-
 @media only screen and (max-width: 480px){
     .footer {
         background-color: $lightpink_color;
@@ -25,8 +24,9 @@
         font-family: 'DM Sans';
         display: flex;
         flex-direction: column;
-        width: 100%;
-    }
+        .container{
+            width: 100%;
+        }
     
     /*footer-titles*/
     .footer-titles{

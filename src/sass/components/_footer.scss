@@ -30,7 +30,6 @@
     .footer-titles{
         width: 234px;
         height: 134px;
-        margin-left: 20px;
         font-family: 'Titan One';
     }
     .footer--title1 {
@@ -45,14 +44,22 @@
     }
     
     /*footer-icons*/
+
+    .footer-icons{
+        width: 153px;
+        height: 34px;
+        display: flex;
+        justify-content: flex-end;
+    }
     .footer-icons__list{
         display: flex;
         justify-content: space-between;
-        width: 153px;
-        height: 34px;
-        padding: 0;
-        margin-left: 148px;
+        .footer-icons__container{
+            width: 32px;
+            height: 40px;
+        }
     }
+
     .footer-icons__item{
         display: flex;
         border-radius: 50%;

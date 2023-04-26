@@ -235,6 +235,11 @@
         justify-content: flex-end;
         margin-top: 0;
         margin-bottom: 20px;
+        .footer-contact__list{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     .footer-icons,

@@ -215,7 +215,7 @@
     /*footer-titles*/
     .footer-titles{
         float: left;
-        width: 33.33%;
+        width: 50%;
         .footer--title1{
             width: 340px;
             height: 57px;
@@ -293,28 +293,53 @@
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0;
-        height: 293px;
+        height: 253px;
     }
     /*footer-titles*/
     .footer-titles{
         float: left;
-        width: 33.33%;
+        width: 50%;
         .footer--title1{
-            width: 340px;
-            height: 57px;
+            width: 472px;
+            height: 34px;
             font-size: 30px;
             line-height: 34px;
         }
         .footer--title2{
-            width: 320px;
-            height: 110px;
+            width: 474px;
+            height:66px;
             font-size: 58px;
             line-height: 66px;
             letter-spacing: 6%;
         }
     }
+
     /*footer-icons*/
+    .footer-icons{
+        display: flex;
+        justify-content: space-between;
+        justify-content: flex-end;
+        .footer-icons__list{
+            padding-top: 10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     /*footer-contact*/
+    .footer-contact__list{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 90px;
+        .footer-contact__item{
+            font-size: 14px;
+            line-height: 26px;
+            text-align: right;
+        }
+    }
+
     /*footer-rights*/
 }
 

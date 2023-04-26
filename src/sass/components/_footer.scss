@@ -258,6 +258,7 @@
 
     /*footer-rights*/
     .line {
+    margin-top: 40px;
     width: 100%;
     height: 1px;
     clear: both;
@@ -268,7 +269,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-            .footer__text {
+        .footer__text {
+            display: flex;
             font-size: 14px;
             line-height: 26px;
             flex-direction: row;

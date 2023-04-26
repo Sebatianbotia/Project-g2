@@ -94,10 +94,10 @@
 .footer-icons__item {
     display: inline-block;
     margin: 0 15px;
-    transition: transform 0.8s ease;
+    transition: transform 0.5s ease;
 }
 .footer-icons__item:hover svg {
-    animation: rotate 1s linear infinite, rotate-stop 0.8s linear 1 forwards;
+    animation: rotate 1s linear infinite, rotate-stop 0.5s linear 1 forwards;
     animation-fill-mode: forwards;
 }
 @keyframes rotate {
@@ -118,15 +118,12 @@
 .footer-contact:hover {
     animation: expand 0.3s forwards;
 }
-@keyframes expand {
+@keyframes expand-right {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
+        width: 0;
     }
     100% {
-        transform: scale(1);
+        width: 200px;
     }
 }
 
@@ -294,7 +291,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0;
-        height: 240px;
+        height: 235px;
     }
     /*footer-titles*/
     .footer-titles{

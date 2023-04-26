@@ -87,13 +87,13 @@
 }
 .footer--title1:hover,
 .footer--title2:hover {
-    transform: translateX(20px);
+    transform: translateX(1.25rem);
 }
 
 /*footer-icons*/
 .footer-icons__item {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 0.9375rem;
     transition: transform 0.5s ease;
 }
 .footer-icons__item:hover svg {
@@ -113,37 +113,43 @@
 
 /*footer-contact*/
 .footer-contact {
-    transition: transform 1s ease-in-out;
-}
-.footer-contact:hover {
-    animation: expand 0.3s forwards;
-}
-@keyframes expand-right {
-    0% {
-        width: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+        animation: shake 0.5s;
     }
-    100% {
-        width: 200px;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
     }
 }
 
 @media only screen and (max-width: 480px){
     .footer {
         flex-direction: column;
+        height: 23.75rem;
     }
     
     /*footer-titles*/
     .footer-titles{
-        width: 234px;
-        height: 134px;
-        margin-left: 20px;
+        width: 14.625rem;
+        height: 7.9375rem;
+        margin: 2.5rem 0 0 1.25rem;
         .footer--title1 {
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
+            margin-bottom: 1rem;
         }
         .footer--title2 {
-            font-size: 34px;
-            line-height: 39px;
+            font-size: 2.125rem;
+            line-height: 2.4375rem;
             letter-spacing: 4%;
         }
     }
@@ -153,10 +159,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
-        height: 34px;
-        padding-left: 120px;
-        margin-left: 148px;
+        width: 18.75rem;
+        height: 2.125rem;
+        padding-left: 7.5rem;
+        margin-left: 9.25rem;
         .footer-icons__item{
             text-align: center;
             width: 32px;
@@ -167,8 +173,8 @@
     /*footer-contact*/
     .footer-contact__list {
         justify-content: space-between;
-        margin: 40px 0px 20px 70px;
-        width: 380px;
+        margin: 40px 0px 40px 70px;
+        width: 32%;
         height: 22px;
         padding-left: 150px;
         .footer-contact__item{
@@ -207,7 +213,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0;
-        height: 611px;
+        height: 300px;
     }
 
     /*footer-titles*/
@@ -247,7 +253,7 @@
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 90px;
+        padding-left: 20%;
         .footer-contact__item{
             font-size: 14px;
             line-height: 26px;
@@ -304,7 +310,7 @@
             line-height: 34px;
         }
         .footer--title2{
-            margin-top: 16px;
+            margin-top: 1rem;
             width: 474px;
             height:66px;
             font-size: 58px;
@@ -334,7 +340,7 @@
         padding-left: 270px;
         margin: 0;
         .footer-contact__item{
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 30px;
             text-align: right;
             padding-right: 12px;

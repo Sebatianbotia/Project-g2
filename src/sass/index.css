@@ -342,7 +342,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-    height: 253px;
+    height: 240px;
   }
   /*footer-titles*/
   .footer-titles {
@@ -395,12 +395,10 @@ h2 {
     width: 97.25%;
     height: 1px;
     clear: both;
-    display: flex;
-    justify-content: center;
+    margin: 40px auto 7px auto;
   }
   .footer-rights {
     width: 100%;
-    margin: 10px 0;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -410,6 +408,7 @@ h2 {
     font-size: 14px;
     line-height: 26px;
     flex-direction: row;
+    margin-bottom: 7px;
   }
   .footer-rights .footer__text p {
     padding-right: 3px;

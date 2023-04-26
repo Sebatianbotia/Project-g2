@@ -71,6 +71,9 @@
     display: flex;
     .footer__text{
         font-style: bold;
+        color: $grey_color;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -182,7 +185,6 @@
         font-size: 12px;
     }
 
-    
     /*footer-rights*/
     .line{
         width: 100%;
@@ -196,9 +198,7 @@
         text-align: center;
         .footer__text {
             font-size: 14px;
-            color: $grey_color;
             flex-direction: column;
-            align-items: center;
         }
     }
 }
@@ -244,7 +244,6 @@
 
     .footer-rights {
     width: 100%;
-    text-align: center;
     margin-top: 10px;
     }
 }

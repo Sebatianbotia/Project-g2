@@ -262,6 +262,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+    height: 293px;
   }
   /*footer-titles*/
   .footer-titles {
@@ -286,10 +287,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     justify-content: flex-end;
-    margin-top: 0;
-    margin-bottom: 20px;
   }
   .footer-icons .footer-icons__list {
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,11 +299,17 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 90px;
+  }
+  .footer-contact__list .footer-contact__item {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: right;
   }
   .footer-icons,
   .footer-contact {
     float: right;
-    width: 66.66%;
+    width: 50%;
   }
   /*footer-rights*/
   .line {
@@ -314,7 +320,7 @@ h2 {
   }
   .footer-rights {
     width: 100%;
-    margin-top: 10px;
+    margin: 20px 0;
     align-items: center;
     justify-content: center;
     text-align: center;

@@ -173,20 +173,20 @@
     /*footer-contact*/
     .footer-contact__list {
         justify-content: space-between;
-        margin: 40px 0px 40px 70px;
+        margin: 2.5rem 0 2.5rem 4.375rem;
         width: 32%;
-        height: 22px;
-        padding-left: 150px;
+        height: 1.375rem;
+        padding-left: 9.375rem;
         .footer-contact__item{
-            font-size: 12px;
-            line-height: 22px;
+            font-size: 0.75rem;
+            line-height: 1.375rem;
             text-align: right;
             vertical-align: top;
         }
     }
 
     .footer-contact__link {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     /*footer-rights*/
@@ -195,13 +195,13 @@
         height: 1px;
     }
     .footer-rights{
-        margin-top: 7px;
-        margin-bottom: 3px;
+        margin-top: 0.438rem;
+        margin-bottom: 0.188rem;
         align-items: center;
         justify-content: center;
         text-align: center;
         .footer__text {
-            font-size: 14px;
+            font-size: 0.875rem;
             flex-direction: column;
         }
     }

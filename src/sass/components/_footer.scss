@@ -28,6 +28,7 @@
 /*footer-titles*/
 .footer-titles{
     font-family: 'Titan One';
+    text-transform: uppercase;
     .footer--title2{
         color: $violet_color;
     }
@@ -306,6 +307,7 @@
             line-height: 34px;
         }
         .footer--title2{
+            margin-top: 16px;
             width: 474px;
             height:66px;
             font-size: 58px;
@@ -319,8 +321,8 @@
         display: flex;
         justify-content: space-between;
         justify-content: flex-end;
+        margin-bottom: 20px;
         .footer-icons__list{
-            padding-top: 10px;
             display:flex;
             flex-direction: row;
             justify-content: space-between;
@@ -332,15 +334,41 @@
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 90px;
+        padding-left: 270px;
+        margin: 0;
         .footer-contact__item{
-            font-size: 14px;
-            line-height: 26px;
+            font-size: 16px;
+            line-height: 30px;
             text-align: right;
+            padding-right: 12px;
         }
     }
 
     /*footer-rights*/
+    .line {
+        margin-top: 40px;
+        width: 97.25%;
+        height: 1px;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        }
+        .footer-rights {
+        width: 100%;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+            .footer__text {
+                display: flex;
+                font-size: 14px;
+                line-height: 26px;
+                flex-direction: row;
+                & p{
+                    padding-right: 3px;
+                }
+            }
+        }
 }
 
 

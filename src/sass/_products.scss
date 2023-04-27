@@ -1,0 +1,138 @@
+:root{
+    --fontTitanOne: 'Titan One', cursive;
+    --fontDMSans: 'DM Sans', sans-serif;
+}
+.container{
+    width: 1440px;
+    height: auto;
+
+}
+
+@media (max-width: 480px){
+.container{
+    display:flex;
+    flex-direction: row;
+}
+}
+
+.products{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 10px;
+    }
+    .image{
+        width: 368px;
+        height: 394px;
+        position: relative;
+        top: -50px;
+        transform: translateY(-50%);
+        }
+@media screen and (max-width: 480px)  {
+ .products{
+display: grid;
+grid-template-rows: repeat(1, 3fr);
+gap: 250px;
+ }
+}
+
+.style-icecream {
+    height: 535px;
+    background-color:#FFB8CA ;
+    border-radius: 24px;
+
+}
+.style-coffee{
+    height: 535px;
+    background-color: #F0D1A5;
+    border-radius: 24px;
+    position: relative;
+}
+.style-milkshakes{
+    height: 535px;
+background-color: #C2E297 ;
+border-radius: 24px;
+position: relative;
+}
+h2{/*texto products*/
+    color: #D41443;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66.41px;
+    letter-spacing: 6%;
+    font-family: var(--fontTitanOne);
+    margin-top: 16px;
+    margin-bottom: 261px;
+}
+h3{/*100% natural*/
+    color: #FFA5BA;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 4%;
+    font-family: var(--fontTitanOne);
+}
+h4{
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 34.35px;
+    line-height: 4%;
+    font-family: var(--fontTitanOne);
+    position: relative;
+    top: -220px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+}
+.parraf {
+    width: 241px;
+    height: 106px;
+    margin-top: 35px;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 61px;
+    font-family: var(--fontDMSans);
+    position: relative;
+    top: -200px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+
+}
+.icon-section{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 35px;
+   gap: 3.8px;
+
+}
+.icon-style{
+    border-radius: 50%;
+    fill: #FFF;
+    top: -340px;
+    position: relative;
+    top: -240px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+}
+.right-arrow{
+    display: block;
+    align-items: center;
+    margin-top: 60px;
+    margin-left:164px ;
+    margin-bottom: 60px;
+    position: relative;
+    top: -230px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+}

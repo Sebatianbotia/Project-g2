@@ -1,23 +1,17 @@
 /*-------card---------*/
-.card{
+.cards{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
 
-.section-card{
-    padding: 40px 32px;
+.card-box{
     width: 368px;
     height: 538px;
     border-radius: 25px;
     box-shadow: 0px 4px 4px rgba(245, 153, 181, 0.25);
 }
 
-
 .card__title-primary{
-    color: var(--white_color);
+    color: $white_color;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -60,7 +54,7 @@
     margin-top: 12px;
 }
 .card-schedule__text{
-    color: var(--pink_color);
+    color: rgba(255, 165, 186, 1);
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -93,8 +87,8 @@
     text-decoration: none;
 }
 
-.horizontal-line{
-    border: 1px solid #E1E1E1;
+.card-line{
+    border: 1px solid $line;
     margin: 32px 0;
 }
 
@@ -138,7 +132,7 @@
         font-size: 12px;
         line-height: 1.5;
     }
-    .horizontal-line{
+    .card-line{
         margin: 24px 0;
     }
 }
@@ -189,14 +183,14 @@
         line-height: 1.87;
         margin-bottom: 15px;
     }
-    .horizontal-line{
+    .card-line{
         margin: 32px 0;
     }
 }
 
-/*------sección botones----*/
+/*------cards-btn----*/
 
-.card-btn{
+.cards-btn{
     display: flex;
     align-items: center;
     margin-top: 60px;
@@ -206,9 +200,9 @@
     gap: 12px;
 }
 
-.btn-location{
-    color: var(--white_color);
-    background-color: var(--violet_color);
+.card-btn1{
+    color: $white_color;
+    background-color: $violet_color;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -221,9 +215,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.btn-franchise{
-    color: var(--violet_color);
-    background-color: var(--white_color);
+.card-btn2{
+    color: $violet_color;
+    background-color: $white_color;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -237,14 +231,14 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px){
-    .card-btn{
+    .cards-btn{
         flex-direction: column;
         display: flex;
         align-items: center;
         margin-top: 32px;
         margin-bottom: 40px;
     }
-    .btn-location{
+    .card-btn1{
         font-size: 16px;
         line-height: 1.31;
         border-radius: 25px;
@@ -255,12 +249,12 @@
 
 @media screen and (min-width: 1280px){
     
-    .card-btn{
+    .cards-btn{
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
-    .btn-location{
+    .card-btn1{
         
         font-size: 16px;
         line-height: 1.31;
@@ -268,7 +262,7 @@
         height: 44px;
     }
     
-    .btn-franchise{
+    .card-btn2{
         font-size: 16px;
         line-height: 1.31;
         width: 198px;

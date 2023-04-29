@@ -1,0 +1,339 @@
+/*-------card---------*/
+.container-cards{
+    background-image: linear-gradient(to top, $background_main 79%, $white_color 21%);
+    background-size: 100% 100%;
+    margin-top: 30px;
+}
+/*contiene las 3 cards*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*contiene la card*/
+.card-box{
+    background-color: $white_color;
+    width: 280px;
+    height: 412px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 40px 32px;
+    border-radius: 8%;
+    box-shadow: 0px 0px 4px rgba(245, 153, 181, 0.25);
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: translateY(-10px); 
+    }
+}
+/*animacion  title cards*/
+.card-box:hover .card__title-primary1 {
+    animation: wave 0.5s linear infinite alternate;
+}
+.card-box:hover .card__title-primary2 {
+    animation: wave 0.5s linear infinite alternate-reverse;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/*cafe*/
+.card__title-primary1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 16px;
+    border: 2px;
+    border-radius: 6px;
+    color: $white_color;
+    background-color: rgba(240, 209, 165, 1);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+/*foodtruck*/
+.card__title-primary2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 16px;
+    border: 2px;
+    border-radius: 6px;
+    color: $white_color;
+    background-color: rgba(194, 226, 151, 1);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/*ciudad y semanas*/
+.card__title-secundary{
+    text-transform: capitalize;
+    color: $black_color;
+    font-style: normal;
+    letter-spacing: 4%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+}
+
+/*letra texto*/
+.card__text{
+    color: $grey_color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    height: 36px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+
+/*line*/
+.card-line{
+    border: 1px solid $line;
+    margin: 24px 0;
+    width: 216px;
+}
+
+/*hora*/
+.card-schedule__text{
+    color: rgba(255, 165, 186, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+/*box contacts*/
+.card__contacts{
+    text-decoration: none;
+    list-style: none;
+    color: $grey_color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 179px;
+    height: 37px;
+    .card__list{
+        text-decoration: none;
+        color: $grey_color;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/*------cards-btn----*/
+
+.cards-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    padding-bottom: 20px;
+    gap: 10px;
+    .card-btn1{
+        color: $white_color;
+        fill:$white_color;
+        background-color: $violet_color;
+        font-family: 'DM Sans';
+        font-style: normal;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        border-radius: 25px;
+        width: 161.45px;
+        height: 44px;
+        border: 0;
+        &:hover {
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+        }
+    }
+    .card-btn2{
+        color: $violet_color;
+        fill: $violet_color;
+        background-color: $white_color;
+        font-family: 'DM Sans';
+        font-style: normal;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        border-radius: 22px;
+        width: 161px;
+        height: 44px;
+        border: 0;
+        &:hover {
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .container-cards{
+        background-image: linear-gradient(to top, $background_main 58%, $white_color 42%);
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-box{
+        background-color: $white_color;
+        padding: 32px;
+        width: 224px;
+        height: 528px;
+    }
+    .card__title-primary1{
+        width: 72px;
+        height: 28px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 32px;
+    }
+    .card__title-primary2{
+        width: 138px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 32px;
+    }
+    .card__title-secundary{
+        font-size: 14px;
+        line-height: 26px;
+        height: 26px;
+    }
+    .card__text{
+        font-size: 14px;
+        height: 65px;
+        line-height: 23px;
+        margin-top: 12px;
+    }
+    .card-line{
+        border: 1px solid $line;
+        margin: 32px 0;
+        width: 160px;
+    }
+    .card-schedule__text{
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    .card__contacts{
+        font-size: 14px;
+        line-height: 26px;
+        width: 160px;
+        height: 48px;
+        .card__list{
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    .cards-btn{
+        flex-direction: row;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        gap: 14.5px;
+        .card-btn1{
+            width: 191.45px;
+        }
+        .card-btn2{
+            width: 174.05px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .container-cards{
+        background-image: linear-gradient(to top, $background_main 86%, $white_color 14%);
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-box{
+        background-color: $white_color;
+        padding: 40px;
+        width: 368px;
+        height: 538px;
+    }
+    .card__title-primary1{
+        width: 75.1px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 32px;
+    }
+    .card__title-primary2{
+        width: 138px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 32px;
+    }
+    .card__title-secundary{
+        font-size: 16px;
+        line-height: 30px;
+        height: 30px;
+    }
+    .card__text{
+        font-size: 16px;
+        height: 50px;
+        line-height: 29px;
+        margin-top: 12px;
+    }
+    .card-line{
+        border: 1px solid $line;
+        margin: 32px 0;
+        width: 288px;
+    }
+    .card-schedule__text{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+    .card__contacts{
+        font-size: 16px;
+        line-height: 29px;
+        width: 243px;
+        height: 50px;
+        .card__list{
+            font-size: 16px;
+            line-height: 29px;
+        }
+    }
+    .cards-btn{
+        flex-direction: row;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        gap: 12px;
+        .card-btn1{
+            width: 198px;
+        }
+        .card-btn2{
+            width: 168px;
+        }
+    }
+}

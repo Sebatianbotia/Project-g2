@@ -16,10 +16,12 @@
                     font-family:  Titan One;
                     font-size: 40px;
                     width: 277px;
+                    height: 50px;
                 }
                 .left-section__tittles--tittle2{
                     color: $violet_color;
                     font-family: Titan One;
+                    height: 50px;
                 }
             }
             
@@ -58,6 +60,7 @@
             flex-direction: row;
             align-content: center;
             align-items: center;
+            margin-top: 20%;
             .icecream__left-section--milk-img{
             left: -3%;
             padding-top:5% ;
@@ -87,16 +90,23 @@
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
-                top: -20vh;
+                top: -12vh;
+                gap: 20px;
+                left: 10vh;
                 .rigth-section__numbers-ul--number{
                     color: $violet_color;
                     font-family:  Titan One;
+                    height: 40px;
                 }
             .rigth-section__numbers-ul--paragraph{
                 color: $white_color;
                 display: flex;
                 justify-content: flex-end;
             }
+            }
+            .rigth-section__soo-tasty-ul{
+              top: 11vh;
+              left: 3vh;
             }
         }
     }

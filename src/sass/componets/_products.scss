@@ -1,0 +1,127 @@
+:root{
+    --fontTitanOne: 'Titan One', cursive;
+    --fontDMSans: 'DM Sans', sans-serif;
+}
+.products-cont{
+    background-color: #FFF5F6;
+    padding-top: 30px;
+}
+.products{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    }
+    .products-image{
+        width: 368px;
+        height: 394px;
+        position: relative;
+        top: -50px;
+        transform: translateY(-50%);
+        }
+.style-icecream {
+    height: 535px;
+    background-color:#FFB8CA ;
+    border-radius: 24px;
+}
+.style-coffee{
+    height: 535px;
+    background-color: #F0D1A5;
+    border-radius: 24px;
+    position: relative;
+}
+.style-milkshakes{
+    height: 535px;
+background-color: #C2E297 ;
+border-radius: 24px;
+position: relative;
+}
+.tittlep{/*texto products*/
+    color: #D41443;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66.41px;
+    letter-spacing: 6%;
+    font-family: var(--fontTitanOne);
+    margin-top: 16px;
+    margin-bottom: 261px;
+}
+.natural{/*100% natural*/
+    color: #FFA5BA;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 4%;
+    font-family: var(--fontTitanOne);
+}
+.tittle4{
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 34.35px;
+    line-height: 4%;
+    font-family: var(--fontTitanOne);
+    position: relative;
+    top: -220px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+}
+.parraf {
+    display: flex;
+    width: 241px;
+    height: 106px;
+    margin-top: 35px;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 20%;
+    font-family: var(--fontDMSans);
+    position: relative;
+    top: -270px;
+    transform: translateY(-50%);
+}
+.icon-section{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 35px;
+   gap: 3.8px;
+}
+.icon-style{
+    border-radius: 50%;
+    fill: #FFF;
+    top: -340px;
+    position: relative;
+    top: -240px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+}
+.right-arrow{
+    align-items: center;
+    margin-top: 60px;
+    margin-left:164px ;
+    margin-bottom: 60px;
+    position: relative;
+    top: -300px;
+    transform: translateY(-50%);
+    margin-top: 32px;
+    display: flex;
+}
+/*diseño adaptable 1200px*/
+@media  screen and (max-width: 1200px) {
+.container, .products{
+    max-width:1200%;
+    background-color: #250341;
+}
+ }
+
+

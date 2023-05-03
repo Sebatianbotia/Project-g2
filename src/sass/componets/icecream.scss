@@ -48,7 +48,7 @@
                     cursor: pointer;
                     &:hover{
                       transform: scale(1.1);
-                     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+                      ox-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
                     }
                 }
                 .icecream__left-section--button2{
@@ -130,25 +130,17 @@
 //mobile 
 
 @media (max-width: 480px) {
-
-
-
-
-
 .icecream{
     height: 409px;
 }
-
 .icecream-main .icecream .icecream__left-section .icecream__left-section--tittles {
     position: relative;
     top: 10%;
     padding-left: 0;
 }
-
 .icecream-main .icecream .icecream__left-section {
     left: 20vw;
 }
-
 .icecream__left-section{
     display: flex;
     flex-direction: column;
@@ -157,24 +149,18 @@
     padding-left: 0px;
     left: 10%;
 }
-
 .left-section__tittles--tittle1 {
     font-size: 40px;
 }
-
 .icecream__left-section--ul{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0%;
 }
-
-
 .icecream__left-section--milk-img, .icecream__left-section--paragraph, .icecream__left-section--arrow-img, .icecream__left-section--div{
     display: none;
 }
-
-
 .icecream__rigth-section--div{
     display: none;
 }
@@ -184,13 +170,11 @@
     right: 20vw;
     position: relative;
 }
-
 .icecream-main .icecream .icecream__rigth-section--img {
     position: relative;
     bottom: 0;
     left: 28vw;
 }
-
 .icecream__rigth-section--img{
     width: 171px;
     height: auto;
@@ -198,11 +182,9 @@
     right: 10%;
     left: 0px;
 }
-
 .bubbles {
   display: none;
 }
-
 .bubbles span:nth-child(1) {
     width: 301px;
     height: 250px;
@@ -212,7 +194,7 @@
 }
   
   .bubbles span:nth-child(2) {
-   display: none;
+    display: none;
   }
   
   .bubbles span:nth-child(3) {
@@ -220,7 +202,7 @@
   }
   
   .bubbles span:nth-child(4) {
-   display: none;
+    display: none;
   }
   
   .bubbles span:nth-child(5) {
@@ -236,7 +218,7 @@
   }
   
   .bubbles span:nth-child(8) {
-   display: none;
+    display: none;
   }
 }
 
@@ -267,7 +249,7 @@
     .icecream-main .icecream .icecream__rigth-section--img {
       width: 210px;
       position: relative;
-      bottom: -22vh;
+      bottom: -1.5vh;
       left: 31vh;
   }
 

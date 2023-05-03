@@ -56,7 +56,7 @@
 
   .menu-btn{
     margin-top: 100px;
-    left: 20vh;
+    padding-left: 20vh;
     border: 0;
     background: $white_color;
     font-size: 1rem;
@@ -71,7 +71,7 @@
   @media (max-width: 480px) {
     .menu-toggle {
       top: 0vh;
-      left: 7vh;
+      padding-left: 7vh;
   }
   .menu-open{
     fill: $violet_color;
@@ -79,7 +79,7 @@
   .close-menu {
     fill: #000;
     position: relative;
-    left: 35vw;
+    padding-left: 35vw;
 }
 
   .menu-btn {
@@ -111,7 +111,7 @@
       fill: #d41443;
       position: relative;
       top: 9vh;
-      left: -14vh;
+      padding-left: -14vh;
     }
     
     .menu-btn{

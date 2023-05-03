@@ -4,32 +4,7 @@
     background-color:#FFF5F6;
 }
 
-    @media  screen and (max-width: 1200px) {
-        .container{
-            max-width:1200;
-            border: 1px solid #0e0c0d;
-        } 
-        .content1, .content2 {
-        position: relative;
-top: -22px;
-transform: translateY(-50%);
-margin-top: 16px;
-padding: 20px;
-        }
-        .howistmade{
-          background-color: aqua;
-        }
-        h4{
-position: relative;
-    top: -62px;
-    transform: translateY(50%);
-    margin-top: 16px;
-        }
-        .info-salud{
-            justify-content:left;
-            
-        }
-      }
+
       @media screen and (max-width: 480px) {
         .howistmade {
           background-color: rgb(61, 50, 112);
@@ -54,6 +29,7 @@ position: relative;
     font-family: var(--fontTitanOne);
     padding-top: 2px;
     margin-bottom: 10px;
+    padding-top: 100px;
 }
 .information{
     display: flex;
@@ -120,11 +96,18 @@ color: #D41443;
 align-items: center;
 font-weight: 700;
 border: none;
+
+&:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
 }
 .info-salud{
     display: flex;
     flex-direction:row;
     justify-content:space-between;
+    padding-bottom: 50px;
     
 }
 .peso{
@@ -159,4 +142,78 @@ position: relative;
     display: flex;
     flex-direction: column;
     
+}
+
+@media (max-width: 480px){
+    .information{
+        border: none;
+        flex-direction: column;
+    }
+    .howitsmade-paragraphs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .content1 {
+        width: 90%;
+        font-size: 14px;
+        padding-left: 10px;
+        
+    }
+
+    .content2 {
+        width: 90%;
+        font-size: 14px;
+        
+    }
+
+    .info-salud {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1199px) {
+    .image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .content1 {
+        width: 365px;
+        font-size: 14px;
+        
+    }
+    .content2 {
+        width: 365px;
+        font-size: 14px;
+        padding: 0;
+        
+    }
+    .readmore {
+        width: 130px;
+        height: 33px;
+        font-size: 13px;
+    }
+
+    .peso{
+        font-size: 35px;
+    }
+
+    .description{
+        width: 200px;
+        font-size: 12px;
+
+    }
+
+    .info-salud {
+        justify-content: center;
+        gap: 70px;
+    }
+    
+    
+
 }

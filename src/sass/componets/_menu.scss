@@ -1,0 +1,165 @@
+//mobile-menú
+
+
+
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    z-index: 3;
+    position: relative;
+    top: -9vh;
+    left: 38vh;
+  }
+  
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $pink-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .close-menu{
+    fill: black;
+
+    &:hover{
+      fill: $violet_color;
+    }
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+
+  .menu-btn{
+    margin-top: 100px;
+    left: 20vh;
+    border: 0;
+    background: $white_color;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    width: 159px;
+    height: 44px;
+    color: $violet_color;
+    font-weight: 700;
+  }
+
+  @media (max-width: 480px) {
+    .menu-toggle {
+      top: 0vh;
+      left: 7vh;
+  }
+  .menu-open{
+    fill: $violet_color;
+  }
+  .close-menu {
+    fill: #000;
+    position: relative;
+    left: 35vw;
+}
+
+  .menu-btn {
+    left: 1vh;
+    bottom: 2vh;
+}
+  .menu-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .active{
+    text-decoration: none;
+    color: $white_color;
+    font-size: 20px;
+    &:hover{
+      color: $violet_color;
+    }
+}
+  }
+  
+  @media (min-width: 750px) and (max-width:1199px){
+    .menu-toggle{
+      width: 60px;
+      height: 60px;
+    }
+    .menu-open{
+      width: 40px;
+      height: 40px;
+      fill: #d41443;
+      position: relative;
+      top: 9vh;
+      left: -14vh;
+    }
+    
+    .menu-btn{
+      width: 350px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 30px;
+      position: relative;
+      left: 1vw;
+    }
+    .menu-ul{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .active{
+      text-decoration: none;
+      color: $white_color;
+      font-size: 30px;
+      &:hover{
+        color: $violet_color;
+      }
+  }
+  .close-menu{
+    fill: black;
+    position: absolute;
+    bottom: 60%;
+    left: 70vw;
+
+    &:hover{
+      fill: $violet_color;
+    }
+  }
+}
+
+
+  
+ 
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+
+}

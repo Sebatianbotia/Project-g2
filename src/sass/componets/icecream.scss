@@ -1,5 +1,5 @@
 .icecream-main{
-  margin-top: 70px;
+  margin-top: 50px;
     .icecream{
         background-color: $lightpink_color;
         display: flex;
@@ -41,6 +41,11 @@
                     border:none;
                     border-radius: 20px;
                     font-size: 16px;
+                    cursor: pointer;
+                    &:hover{
+                      transform: scale(1.1);
+                     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+                    }
                 }
                 .icecream__left-section--button2{
                     width: 138px;
@@ -51,6 +56,11 @@
                     border:none;
                     border-radius: 20px;
                     font-size: 16px;
+                    cursor: pointer;
+                    &:hover{
+                      transform: scale(1.1);
+                      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+                    }
                 }
             }
         }
@@ -156,7 +166,7 @@
 }
 
 
-.icecream__left-section--milk-img, .icecream__left-section--paragraph, .icecream__left-section--arrow-img, .rigth-section__numbers-ul, .rigth-section__soo-tasty-ul{
+.icecream__left-section--milk-img, .icecream__left-section--paragraph, .icecream__left-section--arrow-img, .icecream__left-section--div{
     display: none;
 }
 
@@ -167,14 +177,14 @@
 .icecream__rigth-section--ul{
     width: 171px;
     height: auto;
-    right: 9vh;
+    right: 46vw;
     position: relative;
 }
 
 .icecream-main .icecream .icecream__rigth-section--img {
     position: relative;
     bottom: 0;
-    left: 0;
+    left: 28vw;
 }
 
 .icecream__rigth-section--img{
@@ -183,6 +193,10 @@
     position: absolute;
     right: 10%;
     left: 0px;
+}
+
+.bubbles {
+  display: none;
 }
 
 .bubbles span:nth-child(1) {
@@ -224,23 +238,59 @@
 
 //tablet
 
-@media (min-width: 767px) and (max-width: 1199px){
+@media (min-width: 750px) and (max-width: 1199px){
 
+
+  .icecream-main .icecream .icecream__left-section .icecream__left-section--tittles .left-section__tittles--tittle1 {
+    height: 42px;
+    font-size: 33px;
+}
+
+.icecream-main .icecream .icecream__left-section .icecream__left-section--tittles .left-section__tittles--tittle2 {
+  color: #d41443;
+  height: 50px;
+  font-family: Titan One;
+  font-size: 55px;
+}
     .icecream-main .icecream .icecream__rigth-section--div .rigth-section__numbers-ul {
         flex-direction: column;
         align-items: flex-end;
         display: flex;
         top: -11vh;
+        right: 10vh;
     }
+
+    .icecream-main .icecream .icecream__rigth-section--img {
+      width: 155px;
+      position: relative;
+      bottom: -6vh;
+      left: 7vh;
+  }
 
     .icecream-main .icecream .icecream__left-section {
         left: 5vh;
         z-index: 3;
     }
     .icecream-main .icecream .icecream__rigth-section--div {
-        top: 10.5vh;
-        left: -3vh;
+      top: 17.5vh;
+      left: -13vh;
     }
+    
+  .icecream-main .icecream .icecream__rigth-section--div .rigth-section__numbers-ul .rigth-section__numbers-ul--number {
+    color: #d41443;
+    height: 40px;
+    font-family: Titan One;
+    font-size: 50px;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+.icecream-main .icecream .icecream__rigth-section--div .rigth-section__soo-tasty-ul {
+  top: -3vh;
+  left: 9vh;
+  width: 220px;
+}
+
 
     .icecream__rigth-section--ul{
         position: relative;
@@ -278,7 +328,7 @@
         display: none;
       }
       
- }
+    }
 
 
 
@@ -335,7 +385,7 @@
     height: 60px;
     top: 22%;
     left: 92%;
-    animation: bubble 6s ease-in-out infinite;
+    animation: bubble 20s ease-in-out infinite;
     background-color: $white_color;
   }
   
@@ -350,7 +400,7 @@
   .bubbles span:nth-child(7) {
     width: 68px;
     height: 60px;
-    animation: bubble 6s ease-in-out infinite;
+    animation: bubble 20s ease-in-out infinite;
     top: 9%;
     left: 92%;
     background-color: $white_color;

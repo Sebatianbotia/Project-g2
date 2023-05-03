@@ -1,0 +1,65 @@
+body{
+    font-family: 'DM Sans';
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address{
+    font-style: normal;
+}
+h2{
+    font-size: 4rem;
+} 
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.relative{
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1199px) {
+    .container{
+        width: 100%;
+    }
+
+}
+

@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+@import './utils/variables.scss';
+@import './utils/generics.scss';
+@import './componets/header.scss';
+@import './componets/icecream.scss';
+@import './componets/footer.scss';
+@import './componets/products';
+@import './componets/howistmade';
+@import './componets/cards.scss';
+@import './utils/is-hidden';
+@import './layout/main';
+@import './base/container';
+@import './componets/menu'

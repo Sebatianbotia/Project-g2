@@ -1,11 +1,15 @@
 .icecream-main{
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
     .icecream{
         background-color: $lightpink_color;
         display: flex;
         flex-direction: row;
         width: 100%;
         margin: 0%;
+        justify-content: center;
+        padding-right: 20%;
         .icecream__left-section{
             left: 10vh;
             .icecream__left-section--tittles{
@@ -142,7 +146,7 @@
 }
 
 .icecream-main .icecream .icecream__left-section {
-    left: 5vh;
+    left: 20vw;
 }
 
 .icecream__left-section{
@@ -177,7 +181,7 @@
 .icecream__rigth-section--ul{
     width: 171px;
     height: auto;
-    right: 46vw;
+    right: 20vw;
     position: relative;
 }
 
@@ -261,10 +265,10 @@
     }
 
     .icecream-main .icecream .icecream__rigth-section--img {
-      width: 155px;
+      width: 210px;
       position: relative;
-      bottom: -6vh;
-      left: 7vh;
+      bottom: -22vh;
+      left: 31vh;
   }
 
     .icecream-main .icecream .icecream__left-section {
@@ -272,8 +276,8 @@
         z-index: 3;
     }
     .icecream-main .icecream .icecream__rigth-section--div {
-      top: 17.5vh;
-      left: -13vh;
+      top: 18.5vh;
+      left: 6vh;
     }
     
   .icecream-main .icecream .icecream__rigth-section--div .rigth-section__numbers-ul .rigth-section__numbers-ul--number {

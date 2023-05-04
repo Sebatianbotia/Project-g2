@@ -106,7 +106,7 @@
                 flex-direction: column;
                 top: -12vh;
                 gap: 20px;
-                left: 10vh;
+                left: 5vh;
                 .rigth-section__numbers-ul--number{
                     color: $violet_color;
                     font-family:  Titan One;
@@ -243,7 +243,7 @@
         align-items: flex-end;
         display: flex;
         top: -11vh;
-        right: 10vh;
+        right: 5vh;
     }
 
     .icecream-main .icecream .icecream__rigth-section--img {
@@ -270,6 +270,7 @@
     display: flex;
     /* align-items: flex-end; */
     justify-content: flex-end;
+    left: 5vh;
 }
 .icecream-main .icecream .icecream__rigth-section--div .rigth-section__soo-tasty-ul {
   top: -3vh;

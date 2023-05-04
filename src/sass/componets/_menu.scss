@@ -1,23 +1,11 @@
 //mobile-menú
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: $pink-color;
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-  padding: 20px;
-}
-
 .menu-toggle {
     min-height: 40px;
     min-width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+  
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -33,6 +21,18 @@
   .menu-toggle:hover,
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $pink-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
   }
   
   .menu-container.is-open {

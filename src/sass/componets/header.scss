@@ -34,7 +34,7 @@ nav {
   font-size: 2rem;
   width: 199px;
   height: 50px;
-  right: 29vh;
+  right: 5vh;
 }
 
 .toggle {
@@ -58,7 +58,7 @@ nav {
 }
 
 .btn {
-  left: 20vh;
+  left: 12vh;
   border: 0;
   background: $white_color;
   font-size: 1rem;
@@ -98,7 +98,7 @@ nav {
 /***************************************Responsive 480********************************************************/
 @media (max-width: 480px) {
 
-  .logo{
+  .logo {
     z-index: 3;
     left: -10vh;
   }
@@ -122,13 +122,13 @@ nav {
   .menu{
     display: none;
   }
-
   .logo{
-    left: -17vh;
+    left: -15vh;
+    right: 5vh;
   }
 
   .btn{
-    left: 25vh;
+    left: 12vh;
   }
 
   .btn-secondary{
